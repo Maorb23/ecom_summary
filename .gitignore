@@ -1,0 +1,104 @@
+# Common ignores for Python projects and this repository
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+dist/
+build/
+
+# Virtual environments
+venv/
+venv*/
+venve/
+env/
+.env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+# Secrets and credentials
+secrets/
+secrets/*
+.env
+*.pem
+*.key
+
+# Data files (ignore large dataset files; adjust if you want them tracked)
+data/*.csv
+data/*.zip
+data/raw/
+
+# Notebook checkpoints and outputs
+outputs/
+
+# Build artifacts
+__pycache__/
+*.pyc
+
+# Misc
+*.bak
+*.orig
+
+# csv and .xlsx files (if you don't want to track them)
+*.csv
+*.xlsx
