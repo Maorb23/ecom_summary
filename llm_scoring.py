@@ -37,7 +37,11 @@ def final_pass_fail(
     grounding: str,
     latency_rating: str,
     cost_rating: str,
-) -> str:
+) -> str:   
+    """Determines final pass/fail based on individual criteria ratings.
+    We set a higher bar for grounding and length, where a "bad" rating in either results in an automatic fail,
+    while for other criteria we allow some leniency as long as the majority are "good".
+    """
     ratings = [fluency, grammar, tone, length, grounding, latency_rating, cost_rating]
     if grounding == "bad" or length == "bad":
         return "fail"
